@@ -1,12 +1,15 @@
 .Contacts {
   background-color: #3282b8;
-  width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
   &__socials {
     display: flex;
@@ -47,6 +50,10 @@
 
 @media screen and (max-width: 767px) {
   .Contacts {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
   }
 }
