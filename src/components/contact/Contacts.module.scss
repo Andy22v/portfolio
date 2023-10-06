@@ -1,0 +1,52 @@
+.Contacts {
+  background-color: #3282b8;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__connectLinks {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__social {
+    background-color: transparent;
+  }
+
+  h3 {
+    color: #fff;
+    font-family: Nunito, sans-serif;
+    font-size: x-large;
+  }
+
+  p {
+    color: #fff;
+    font-family: Nunito, sans-serif;
+  }
+
+  &__personal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Contacts {
+    height: 100%;
+  }
+}
