@@ -9,13 +9,7 @@ const Navbar = () => {
       <h1 className={styles.Navbar__title}>Portfolio.</h1>
       <ul className={styles.Navbar__list}>
         <li>
-          <Link
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={-10000}
-            duration={1000}
-          >
+          <Link to="hero" spy={true} smooth={true} offset={-1} duration={500}>
             Home
           </Link>
         </li>
