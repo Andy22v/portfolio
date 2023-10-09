@@ -13,7 +13,7 @@ const Navbar = () => {
             to="hero"
             spy={true}
             smooth={true}
-            offset={1000}
+            offset={-2000}
             duration={1000}
           >
             Home
