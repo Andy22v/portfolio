@@ -25,7 +25,7 @@ const Projects = () => {
       id: 1,
       image: IG,
       title: "Instagram clone",
-      url: "https://instagram-clone-andy22v.vercel.app/",
+      url: "https://social-network-orpin-five.vercel.app/",
       skills: "HTML5, CSS, React",
     },
     {
