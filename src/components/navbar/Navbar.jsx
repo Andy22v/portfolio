@@ -27,7 +27,7 @@ const Navbar = () => {
             offset={-70}
             duration={500}
           >
-            Projects
+            Work
           </Link>
         </li>
         <li>

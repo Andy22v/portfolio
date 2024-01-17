@@ -1,5 +1,5 @@
 .Contacts {
-  background-color: #3282b8;
+  background-color: #1c1c65;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +10,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  margin-bottom: 30px;
 
   &__socials {
     display: flex;
@@ -29,7 +30,7 @@
   }
 
   h3 {
-    color: #fff;
+    color: #c961de;
     font-family: Nunito, sans-serif;
     font-size: x-large;
   }
@@ -45,6 +46,11 @@
     align-items: center;
     padding: 10px;
     width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  &__personal p {
+    color: #c961de;
   }
 }
 

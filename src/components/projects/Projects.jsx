@@ -54,7 +54,7 @@ const Projects = () => {
   return (
     <div className={styles.Projects}>
       <a id="projects"></a>
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <div className={styles.Projects__contain}>
         {mocks &&
           mocks.map((project) => (
@@ -68,22 +68,20 @@ const Projects = () => {
               </div>
               <div className={styles.Projects__back}>
                 <p>
-                  Title: <strong>{project.title}</strong>
+                  <strong>{project.title}</strong>
                 </p>
-                <p>
-                  Skills: <strong>{project.skills}</strong>
-                </p>
+                <p>{project.skills}</p>
                 <div className={styles.Projects__btnContain}>
-                  <a href={project.url}>
+                  {/* <a href={project.url}>
                     <button className={styles.Projects__btn}>Demo</button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           ))}
       </div>
       <div className={styles.Projects__skills}>
-        <h1>Skills</h1>
+        <h2>Skills</h2>
         <div className={styles.Projects__skillsContain}>
           {skills.map((skill, index) => (
             <Image
