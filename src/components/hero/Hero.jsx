@@ -23,6 +23,9 @@ const Hero = () => {
             <img className={styles.Hero__photo} src="/andy2.png" alt="io" />
           </div>
         </div>
+        <div className={styles.Hero__space}>
+          <img src="/space.svg" alt="space" />
+        </div>
       </div>
     </div>
   );

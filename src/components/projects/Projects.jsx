@@ -72,9 +72,9 @@ const Projects = () => {
                 </p>
                 <p>{project.skills}</p>
                 <div className={styles.Projects__btnContain}>
-                  {/* <a href={project.url}>
+                  <a href={project.url}>
                     <button className={styles.Projects__btn}>Demo</button>
-                  </a> */}
+                  </a>
                 </div>
               </div>
             </div>
