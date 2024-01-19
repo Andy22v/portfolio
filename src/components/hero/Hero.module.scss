@@ -3,7 +3,7 @@
 @media screen and (min-width: 1024px) {
   .Hero {
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,11 @@
     }
 
     &__info p {
-      width: 50%;
+      width: 70%;
+    }
+
+    strong {
+      color: #ffffff;
     }
 
     &__btn {
@@ -91,9 +95,15 @@
     }
 
     &__space {
+      width: 100%;
       position: absolute;
+      top: 20%;
       left: 0;
-      z-index: 0;
+    }
+
+    &__space img {
+      width: 100%;
+      object-fit: contain;
     }
   }
 }
@@ -102,7 +112,7 @@
   .Hero {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,8 +122,9 @@
     &__contain {
       display: flex;
       justify-content: space-between;
-      width: 100%;
+      width: 95%;
       gap: 20px;
+      margin-top: 20px;
     }
 
     &__infoContain {
@@ -146,109 +157,8 @@
       font-size: 24px;
     }
 
-    &__btn {
-      padding: 12.5px 30px;
-      border: 0;
-      border-radius: 10px;
-      background-color: #c961de;
+    strong {
       color: #ffffff;
-      font-weight: Bold;
-      transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-      cursor: pointer;
-      border-radius: 30px;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      background: linear-gradient(107deg, #c961de 24.43%, #2954a3 68.95%);
-      box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
-      position: relative;
-      z-index: 999;
-
-      &:hover {
-        box-shadow: 10px 10px 20px 10px #c961ded1;
-      }
-    }
-
-    &__svg img {
-      z-index: 99999;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      vertical-align: middle;
-      mix-blend-mode: lighten;
-    }
-
-    &__svg {
-      z-index: 0;
-      position: relative;
-      background-color: #2f2f8a;
-      width: 500px;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: self-end;
-      border-radius: 61% 60% 30% 70%/60% 40% 60% 40%;
-    }
-
-    &__space {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &__space img {
-      object-fit: contain;
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .Hero {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 100px;
-
-    &__contain {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
-      gap: 20px;
-    }
-
-    &__infoContain {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 30px;
-    }
-
-    &__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      color: #c961de;
-      width: 100%;
-      font-family: Nunito, sans-serif;
-      font-size: x-large;
-    }
-
-    &__info h3 {
-      font-size: 40px;
-      font-weight: bold;
-    }
-
-    &__info p {
-      font-size: 16px;
     }
 
     &__btn {
@@ -288,6 +198,118 @@
       background-color: #2f2f8a;
       width: 400px;
       height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: self-end;
+      border-radius: 61% 60% 30% 70%/60% 40% 60% 40%;
+    }
+
+    &__space {
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      left: 0;
+    }
+
+    &__space img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    &__contain {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    &__infoContain {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: #c961de;
+      width: 90%;
+      font-family: Nunito, sans-serif;
+      font-size: x-large;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    &__info h3 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    &__info p {
+      font-size: 16px;
+    }
+
+    &__btn {
+      padding: 12.5px 30px;
+      border: 0;
+      border-radius: 10px;
+      background-color: #c961de;
+      color: #ffffff;
+      font-weight: Bold;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      cursor: pointer;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background: linear-gradient(107deg, #c961de 24.43%, #2954a3 68.95%);
+      box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
+      position: relative;
+      z-index: 999;
+
+      &:hover {
+        box-shadow: 10px 10px 20px 10px #c961ded1;
+      }
+    }
+
+    &__svg img {
+      z-index: 99999;
+      position: absolute;
+      width: 90%;
+      height: auto;
+      vertical-align: middle;
+      mix-blend-mode: lighten;
+    }
+
+    &__svg {
+      z-index: 0;
+      position: relative;
+      background-color: #2f2f8a;
+      width: 300px;
+      height: 300px;
       display: flex;
       justify-content: center;
       align-items: self-end;

@@ -8,7 +8,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 400px;
     font-family: Nunito, sans-serif;
 
     h2 {
@@ -52,8 +52,8 @@
       flex-direction: column;
       height: 100px;
       width: 100%;
+      padding: 10px;
       color: lightgrey;
-      padding: 14px 118px 15px 118px;
       justify-content: center;
       align-items: center;
       border-radius: 0px 0px 30px 30px;
@@ -77,16 +77,21 @@
       padding: 12.5px 30px;
       border: 0;
       border-radius: 10px;
-      background-color: #2ba8fb;
+      background-color: #c961de;
       color: #ffffff;
       font-weight: Bold;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       cursor: pointer;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background: linear-gradient(107deg, #c961de 24.43%, #2954a3 68.95%);
+      box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
+      position: relative;
+      z-index: 999;
 
       &:hover {
-        background-color: #6fc5ff;
-        box-shadow: 0 0 10px #6fc5ff50;
+        box-shadow: 10px 10px 20px 10px #c961ded1;
       }
     }
 
@@ -173,7 +178,7 @@
       height: 100px;
       width: 100%;
       color: lightgrey;
-      padding: 14px 118px 15px 118px;
+      padding: 10px;
       justify-content: center;
       align-items: center;
       border-radius: 0px 0px 30px 30px;
@@ -197,16 +202,21 @@
       padding: 12.5px 30px;
       border: 0;
       border-radius: 10px;
-      background-color: #2ba8fb;
+      background-color: #c961de;
       color: #ffffff;
       font-weight: Bold;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       cursor: pointer;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background: linear-gradient(107deg, #c961de 24.43%, #2954a3 68.95%);
+      box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
+      position: relative;
+      z-index: 999;
 
       &:hover {
-        background-color: #6fc5ff;
-        box-shadow: 0 0 10px #6fc5ff50;
+        box-shadow: 10px 10px 20px 10px #c961ded1;
       }
     }
 
@@ -232,6 +242,8 @@
     }
 
     &__skill {
+      width: 70px;
+      height: 70px;
       background-color: #c961de;
       border-radius: 10px;
     }
@@ -268,14 +280,14 @@
 
     &__card {
       display: flex;
-      width: 340px;
-      padding-top: 23px;
+      width: 300px;
+      padding-top: 20px;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      gap: 25.2px;
+      gap: 25px;
       border-radius: 30px;
-      border: 1.53px solid rgba(255, 255, 255, 0.6);
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
       background: #2f2f8a;
       backdrop-filter: blur(10px);
     }
@@ -358,6 +370,8 @@
     }
 
     &__skill {
+      width: 70px;
+      height: 70px;
       background-color: #c961de;
       border-radius: 10px;
     }
