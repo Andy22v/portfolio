@@ -38,6 +38,7 @@
       border: 1.53px solid rgba(255, 255, 255, 0.6);
       background: #2f2f8a;
       backdrop-filter: blur(10px);
+      z-index: 9;
     }
 
     &__img {
@@ -114,11 +115,25 @@
       flex-wrap: wrap;
       gap: 30px;
       width: 50%;
+      z-index: 9;
     }
 
     &__skill {
       background-color: #c961de;
       border-radius: 10px;
+    }
+
+    &__svgContain {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -1000px;
+      z-index: 0;
+    }
+
+    &__svgContain img {
+      object-fit: contain;
+      width: 100%;
     }
   }
 }
@@ -238,14 +253,27 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
-      width: 50%;
+      width: 70%;
+      z-index: 9;
     }
 
     &__skill {
-      width: 70px;
-      height: 70px;
+      width: 100px;
+      height: 100px;
       background-color: #c961de;
       border-radius: 10px;
+    }
+
+    &__svgContain {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -600px;
+      z-index: 0;
+    }
+
+    &__svgContain img {
+      width: 100%;
     }
   }
 }
@@ -374,6 +402,18 @@
       height: 70px;
       background-color: #c961de;
       border-radius: 10px;
+    }
+
+    &__svgContain {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -340px;
+      z-index: 0;
+    }
+
+    &__svgContain img {
+      width: 100%;
     }
   }
 }

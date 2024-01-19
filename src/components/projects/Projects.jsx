@@ -95,6 +95,9 @@ const Projects = () => {
             />
           ))}
         </div>
+        <div className={styles.Projects__svgContain}>
+          <img src="/Illustration.svg" alt="illustration" />
+        </div>
       </div>
     </div>
   );
