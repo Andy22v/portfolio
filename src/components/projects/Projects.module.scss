@@ -121,6 +121,8 @@
     &__skill {
       background-color: #c961de;
       border-radius: 10px;
+      position: relative;
+      z-index: 99;
     }
 
     &__svgContain {
@@ -262,6 +264,8 @@
       height: 100px;
       background-color: #c961de;
       border-radius: 10px;
+      position: relative;
+      z-index: 99;
     }
 
     &__svgContain {
@@ -402,6 +406,8 @@
       height: 70px;
       background-color: #c961de;
       border-radius: 10px;
+      position: relative;
+      z-index: 99;
     }
 
     &__svgContain {
