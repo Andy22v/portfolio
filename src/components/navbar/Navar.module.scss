@@ -12,10 +12,15 @@
   left: 0;
   z-index: 99999;
 
-  &__title {
+  &__logo {
     font-family: Nunito, sans-serif;
     color: #c961de;
     transition: all 0.25s;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &__list {
