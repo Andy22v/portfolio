@@ -22,7 +22,7 @@
       justify-content: center;
       align-items: center;
       gap: 30px;
-      width: 80%;
+      width: 70%;
       height: 100%;
     }
 
@@ -38,7 +38,8 @@
       border: 1.53px solid rgba(255, 255, 255, 0.6);
       background: #2f2f8a;
       backdrop-filter: blur(10px);
-      z-index: 9;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+      z-index: 999;
     }
 
     &__img {
@@ -51,31 +52,27 @@
     &__back {
       display: flex;
       flex-direction: column;
-      height: 100px;
+      height: 100%;
       width: 100%;
       padding: 10px;
       color: lightgrey;
       justify-content: center;
       align-items: center;
       border-radius: 0px 0px 30px 30px;
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-    &__back p {
-      width: 100%;
     }
 
     &__btnContain {
       display: flex;
-      justify-content: end;
-      align-items: end;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
       padding: 10px;
     }
 
     &__btn {
-      padding: 12.5px 30px;
+      width: 400px;
+      height: 40px;
       border: 0;
       border-radius: 10px;
       background-color: #c961de;
@@ -87,12 +84,12 @@
       border-radius: 30px;
       border: 1px solid rgba(255, 255, 255, 0.6);
       background: linear-gradient(107deg, #c961de 24.43%, #2954a3 68.95%);
-      box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
+      box-shadow: 10px 10px 10px 10px rgba(8, 12, 33, 0.15);
       position: relative;
       z-index: 999;
 
       &:hover {
-        box-shadow: 10px 10px 20px 10px #c961ded1;
+        transform: translateY(-10px);
       }
     }
 
@@ -126,16 +123,17 @@
     }
 
     &__svgContain {
-      width: 100%;
+      width: 50%;
       position: absolute;
-      left: 0;
-      bottom: -1000px;
+
+      bottom: -104px;
       z-index: 0;
+      right: 100px;
     }
 
     &__svgContain img {
       object-fit: contain;
-      width: 100%;
+      width: 1000px;
     }
   }
 }

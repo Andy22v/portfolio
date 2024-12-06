@@ -7,8 +7,8 @@ const Hero = () => {
       <div className={styles.Hero__contain}>
         <div className={styles.Hero__infoContain}>
           <div className={styles.Hero__info}>
-            <h3>
-              👋 Hi, i'm <strong>Andy</strong>{" "}
+            <h3 className={styles.Hero__presentation}>
+              👋 Hi, i'm <strong>Andy</strong>.|
             </h3>
             <p>
               Sono un <strong>Front-end Developer</strong> con passione anche

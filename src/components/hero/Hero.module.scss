@@ -34,13 +34,16 @@
       gap: 20px;
       color: #c961de;
       width: 100%;
-      font-family: Nunito, sans-serif;
+      font-family: monospace;
       font-size: x-large;
     }
 
-    &__info h3 {
+    &__presentation {
       font-size: 72px;
-      font-weight: bold;
+      font-weight: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 2s steps(23) cursor 0.4s step-end infinite alternate;
     }
 
     &__info p {
@@ -327,5 +330,27 @@
       width: 500px;
       object-fit: contain;
     }
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
 }
